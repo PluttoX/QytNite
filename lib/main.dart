@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Text("Hello"),
+      home: const Text("Home Screen"),
     );
   }
 }
