@@ -21,4 +21,14 @@ class GoogleSignInController {
       return e; //returns an exception if occurred
     }
   }
+
+  Future<bool> signOutFromGoogle() async {
+    try {
+      await FirebaseAuth.instance.signOut();
+      return true;
+    } on Exception catch (_) {
+      return false;
+    }
+  }
+
 }
